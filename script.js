@@ -37,14 +37,14 @@ $(document).ready(function(){
     
     });
 function sendMail() {
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let phoneNo = document.getElementById("phone").value;
-    let message = document.getElementById("message").value;
-    let emailBody = "Name : " +name+ "<br/>Email : " +email+ "<br/>Phone Number : " +phoneNo+ "<br/>Message : "+message;
+    let name = document.getElementById("txt").value;
+    let email = document.getElementById("eml").value;
+    let project = document.getElementById("txt1").value;
+    let message = document.getElementById("txtarea").value;
+    let emailBody = "Name : " +name+ "<br/>Email : " +email+ "<br/>Project : " +project+ "<br/>Message : "+message;
 
     Email.send({
-        SecureToken : "3382b6be-dd99-4f10-b36c-43a74d7fe54e",
+        SecureToken : "348f34f8-3669-4847-aef9-03317c808489",
         To: 'meghrajgupta58@outlook.com',
         From: "meghrajgupta58@outlook.com",
         Subject: "Contact Message from "+name,
