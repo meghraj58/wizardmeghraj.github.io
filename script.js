@@ -36,7 +36,8 @@ $(document).ready(function(){
       });
     
     });
-function sendMail() {
+<script>
+    function sendMail() {
     let name = document.getElementById("txt").value;
     let email = document.getElementById("eml").value;
     let project = document.getElementById("txt1").value;
@@ -44,7 +45,10 @@ function sendMail() {
     let emailBody = "Name : " +name+ "<br/>Email : " +email+ "<br/>Project : " +project+ "<br/>Message : "+message;
 
     Email.send({
-        SecureToken : "348f34f8-3669-4847-aef9-03317c808489",
+        // Host : "smtp.elasticemail.com",
+        // Username : "meghrajgupta58@outlook.com",
+        // Password : "D599914A29A6AD9DFA03AFD357258C7FFDC9",
+        SecureToken : "45a50538-202f-47d7-9109-d7256a8f67d6",
         To: 'meghrajgupta58@outlook.com',
         From: "meghrajgupta58@outlook.com",
         Subject: "Contact Message from "+name,
@@ -53,3 +57,21 @@ function sendMail() {
         message => alert(message)
     );
 }
+</script>
+// function sendMail() {
+//     let name = document.getElementById("txt").value;
+//     let email = document.getElementById("eml").value;
+//     let project = document.getElementById("txt1").value;
+//     let message = document.getElementById("txtarea").value;
+//     let emailBody = "Name : " +name+ "<br/>Email : " +email+ "<br/>Project : " +project+ "<br/>Message : "+message;
+
+//     Email.send({
+//         SecureToken : "348f34f8-3669-4847-aef9-03317c808489",
+//         To: 'meghrajgupta58@outlook.com',
+//         From: "meghrajgupta58@outlook.com",
+//         Subject: "Contact Message from "+name,
+//         Body: emailBody
+//     }).then(
+//         message => alert(message)
+//     );
+// }
