@@ -36,7 +36,6 @@ $(document).ready(function(){
       });
     
     });
-<script>
     function sendMail() {
     let name = document.getElementById("txt").value;
     let email = document.getElementById("eml").value;
@@ -57,7 +56,7 @@ $(document).ready(function(){
         message => alert(message)
     );
 }
-</script>
+
 // function sendMail() {
 //     let name = document.getElementById("txt").value;
 //     let email = document.getElementById("eml").value;
