@@ -370,7 +370,7 @@ header .navbar ul li a:hover{
     display: none;
 }
 .label{
-    color: rgb(221, 235, 20);
+    color: var(--yellow);
     font-size: large;
 }
 
