@@ -369,7 +369,10 @@ header .navbar ul li a:hover{
     z-index: 100;
     display: none;
 }
-
+.label{
+    color: rgb(221, 235, 20);
+    font-size: large;
+}
 
 
 
