@@ -284,7 +284,7 @@
         <h3 class="label">phoneNo:</h3> <input type="tel" placeholder="phoneNo" class="box" id="txt1">
         <h3 class="label">Message:</h3><textarea name="txtarea" id="txtarea" cols="30" rows="10" class="box message" placeholder="message"></textarea>
 <!--         <button type="submit" class="btn" id="sbmt" onclick="sendMail()"> send <i class="fas fa-paper-plane"></i> </button> -->
-        <input type="button" class="btn" id="sbmt" onclick="sendMail()" value="send Message">
+        <input type="button" class="btn" id="sbmt" onclick="validateForm()" value="send Message">
     </form>
 
 </div>
@@ -309,26 +309,56 @@
 </script>
     <!-- smtpjs sendmail code -->
 <script>
-    function sendMail() {
-    let name = document.getElementById("txt").value;
-    let email = document.getElementById("eml").value;
-    let phoneNo = document.getElementById("txt1").value;
-    let message = document.getElementById("txtarea").value;
-    let emailBody = "Name : " +name+ "<br/>Email : " +email+ "<br/>PhoneNo : " +phoneNo+ "<br/>Message : "+message;
+    function validateForm() {
+      let name = document.getElementById("text").value;
+      let email = document.getElementById("email").value;
+      let phoneNo = document.getElementById("phone").value;
+      let message = document.getElementById("message").value;
 
-    Email.send({
-        // Host : "smtp.elasticemail.com",
-        // Username : "meghrajgupta58@outlook.com",
-        // Password : "D599914A29A6AD9DFA03AFD357258C7FFDC9",
-        SecureToken : "45a50538-202f-47d7-9109-d7256a8f67d6",
-        To: 'meghrajgupta58@outlook.com',
-        From: "meghrajgupta58@outlook.com",
-        Subject: "Contact Message from "+name,
+      // Simple validation
+      if (!name || !email || !phoneNo || !message) {
+        alert("Please fill in all fields.");
+        return false;
+      }
+
+      // Email validation (you can use a more complex validation if needed)
+      const emailRegex = /^\S+@\S+\.\S+$/;
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      // Phone number validation (you can use a more complex validation if needed)
+      const phoneRegex = /^\d{10}$/;
+      if (!phoneRegex.test(phoneNo)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return false;
+      }
+
+      // If all validations pass, send the email
+      sendMail();
+      return false; // Prevent the form from actually submitting
+    }
+
+    function sendMail() {
+      let name = document.getElementById("text").value;
+      let email = document.getElementById("email").value;
+      let phoneNo = document.getElementById("phone").value;
+      let message = document.getElementById("message").value;
+      let emailBody = "Name: " + name + "<br/>Email: " + email + "<br/>Phone: " + phoneNo + "<br/>Message: " + message;
+
+      Email.send({
+        SecureToken: "45a50538-202f-47d7-9109-d7256a8f67d6",
+        To: 'rpl.tournament.howrah@outlook.com',
+        From: "rpl.tournament.howrah@outlook.com",
+        Subject: "Contact Message from " + name,
         Body: emailBody
-    }).then(
-        message => alert("Thank u For Your Message")
-    );
-}
+      }).then(
+        message => {
+         alert("Thanks For Your Message");
+        }
+      );
+    }
 </script>
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
