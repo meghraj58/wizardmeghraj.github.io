@@ -317,21 +317,21 @@
 
       // Simple validation
       if (!name || !email || !phoneNo || !message) {
-        alert("Please fill in all fields.");
+        alert("Info: All fields must be filled in.");
         return false;
       }
 
       // Email validation (you can use a more complex validation if needed)
       const emailRegex = /^\S+@\S+\.\S+$/;
       if (!emailRegex.test(email)) {
-        alert("Please enter a valid email address.");
+        alert("Info: Enter a valid email address.");
         return false;
       }
 
       // Phone number validation (you can use a more complex validation if needed)
       const phoneRegex = /^\d{10}$/;
       if (!phoneRegex.test(phoneNo)) {
-        alert("Please enter a valid 10-digit phone number.");
+        alert("Info: Enter a valid 10-digit phone number.");
         return false;
       }
 
