@@ -2,416 +2,349 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#F4F7FF">
     <title>Meghraj Gupta</title>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    
-    <!-- font awesome for linkedin -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-    <!--  icon    -->
     <link rel="icon" href="images/MG.png">
-
 </head>
 <body>
-    
-<!-- header section starts  -->
 
-<header>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
-    <div class="user">
-        <img src="images/mgpassport1.jpg" alt="">
-        <h3 class="name">Meghraj Gupta</h3>
-        <p class="post">Full Stack Java Developer at Conacent Consulting Pvt Ltd</p>
+    <div class="bg-effects" aria-hidden="true">
+        <div class="rgb-wash"></div>
+        <div class="rgb-wave"></div>
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+        <span class="blob blob-4"></span>
     </div>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#portfolio">Certificate</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-</header>
-
-<!-- header section ends -->
-
-<div id="menu" class="fas fa-bars"></div>
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <h3>HI THERE !</h3>
-    <h1>I'M <span>Meghraj Gupta</span></h1>
-    <p>I Believe In Myself and I am Passionate about my work. I am proud of Myself. I am honest with Myself. </p>
-    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-<h1 class="heading"> <span>about</span> me </h1>
-
-<div class="row">
-
-    <div class="info">
-        <h3> <span> Name : </span> Meghraj Gupta </h3>
-        <h3> <span> Age : </span> 25+ </h3>
-        <h3> <span> Qualification : </span> M.Tech(Computer Science & Engineer) </h3>
-        <h3> <span> Post : </span> Software Engineer </h3>
-        <h3> <span> language : </span> Hindi English Bengali </h3>
-        <a href="images/CV.pdf"><button class="btn"> Download CV <i class="fas fa-download"></i> </button></a>
-    </div>
-
-    <div class="counter">
-
-        <div class="box">
-            <span>3+</span>
-            <h3>Years of experience</h3>
+    <header>
+        <div class="user">
+            <div class="avatar-ring">
+                <img src="images/mgpassport1.jpg" alt="Meghraj Gupta">
+                <span class="live-dot" title="Available for work"></span>
+            </div>
+            <h3 class="name">Meghraj Gupta</h3>
+            <p class="post">Full Stack Java Developer at Conacent Consulting Pvt Ltd</p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/wizard-meghraj" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:meghrajgupta58@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+917295001179" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            </div>
         </div>
 
-        <div class="box">
-            <span>12+</span>
-            <h3>Project Completed</h3>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                <li><a href="#portfolio"><i class="fa-solid fa-certificate"></i> Certificates</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="menu" class="fa-solid fa-bars"></div>
+
+    <section class="home" id="home">
+        <div class="home-copy">
+            <div class="status-badge hero-line">
+                <span class="status-icon" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+                <span class="status-copy">
+                    <small>Open to work</small>
+                    <strong>Available for Opportunities</strong>
+                </span>
+            </div>
+            <h3 class="hero-line">HI THERE !</h3>
+            <h1 class="hero-line">I'M <span>Meghraj Gupta</span></h1>
+            <p class="role-line hero-line">I am a <span id="typed-role">Full Stack Java Developer</span><span class="typed-cursor">|</span></p>
+            <p class="hero-line">I Believe In Myself and I am Passionate about my work. I am proud of Myself. I am honest with Myself.</p>
+            <div class="hero-actions hero-line">
+                <a href="#about"><button class="btn">About me <i class="fa-solid fa-user"></i></button></a>
+                <a href="#contact"><button class="btn btn-ghost">Let's talk <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
         </div>
-
-        <div class="box">
-            <span>40+</span>
-            <h3>Happy clients</h3>
-        </div>
-
-        <div class="box">
-            <span>7+</span>
-            <h3>Awards won</h3>
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- education section starts  -->
-
-<section class="education" id="education">
-
-<h1 class="heading"> My <span>Education</span> </h1>
-
-<div class="box-container">
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2022-2024</span>
-        <h3>M.Tech Completed </h3>
-        <p>Budge Budge Institute of Technology kolkata (West Bengal) in Computer Science & Engineering </p>
-    </div>
-     <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2024</span>
-        <h3>Angular Developer</h3>
-        <p>Angular developer creating responsive web interfaces, proficient in HTML, CSS, and TypeScript, with a focus on clean coding and collaboration.</p>
-    </div>
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2022</span>
-        <h3>B.Tech Completed </h3>
-        <p>Budge Budge Institute of Technology kolkata (West Bengal) in Computer Science & Engineering with Aggregate CGPA 8.39 </p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2021</span>
-        <h3>front end Developer</h3>
-        <p>Good Knowladge of front end Developer(HTML-95%, CSS-85%, Java Script-75%) Also Known as pug. I have made many PROJECT(gym website,food website,personal portfolio,E-commerce website) </p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2021</span>
-        <h3>Digital Marketing </h3>
-        <p>eMareting Institute in howrah Certificate No: CERT001387989-EMI</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2020</span>
-        <h3>Data Analytics </h3>
-        <p>Globe Net harnessing skills in kolkata (participate in webinar) & JP International School greater noida in UP Certificate ID: 75704-162-585-2578</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2020</span>
-        <h3>Robotics </h3>
-        <p>JP International School greater noida in UP Certificate ID: E8270-362-585-34</p>
-    </div>
-    
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2018</span>
-        <h3>Higher Secondary</h3>
-        <p>V K SS HURRAHI Runipur Nawada Bihar 805112 in Science(BSEB) with Aggregate percentage 63.2%</p>
-    </div>
-
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2015</span>
-        <h3>Secondary</h3>
-        <p>V K SS HURRAHI Runipur Nawada Bihar 805112 in BSEB with Aggregate percentage 66.4%</p>
-    </div>
-</div>
-
-</section>
-
-<!-- education section ends -->
-
-<!-- experience section starts -->    
-    
-    <section class="education" id="experience">
-
-    <h1 class="heading"> My <span>Experience</span></h1>
-    <div class="box-container">
-        
-      <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2023(Jan)-Present</span>
-        <h3>Java Developer</h3>
-        <p>Conacent Consulting Pvt Ltd.</p>
-        <p>Head Office: CF-90, CF Block, Sector 1, Salt Lake City, Kolkata-700064, West Bengal, India.</p>
-      </div>
-        
-    <div class="box">
-        <i class="fas fa-graduation-cap"></i>
-        <span>2022(Aug)-2023(Jan)</span>
-        <h3>Full Stack Java</h3>
-        <p>Naresh I Technologies</p>
-        <p>Add: 2nd Floor, Durga Bhavani Plaza,Ameerpet, Hyderabad Call/Whatsapp: +91-8179191999 Email:-onlinetraining@nareshit.com</p>
-    </div>
-        
-    </div>
-        
     </section>
-<!-- experience section ends -->    
 
-<!-- portfolio section starts  -->
-
-<section class="portfolio" id="portfolio">
-
-<h1 class="heading"> My <span>Certificate</span> </h1>
-
-<div class="box-container">
-
-    <div class="box">
-        <img src="images/Kshitij .jpg" alt="">
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Java</span><span>Full Stack</span><span>Angular</span><span>TypeScript</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Pug</span><span>Digital Marketing</span><span>Data Analytics</span>
+            <span>Java</span><span>Full Stack</span><span>Angular</span><span>TypeScript</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Pug</span><span>Digital Marketing</span><span>Data Analytics</span>
+        </div>
     </div>
 
-    <div class="box">
-        <img src="images/KARATE camp .jpg" alt="">
-    </div>
+    <section class="about" id="about">
+        <h1 class="heading reveal"> <span>about</span> me </h1>
 
-    <div class="box">
-        <img src="images/KARATE camp 2.jpg" alt="">
-    </div>
+        <div class="row">
+            <div class="info reveal">
+                <p class="bio">Software Engineer focused on Java and modern web interfaces. I build clean, responsive products and keep learning across backend, frontend, and analytics.</p>
+                <h3> <span> Name : </span> Meghraj Gupta </h3>
+                <h3> <span> Age : </span> <span id="user-age" data-birthdate="2001-01-02">25+</span> </h3>
+                <h3> <span> Qualification : </span> M.Tech(Computer Science & Engineer) </h3>
+                <h3> <span> Post : </span> Software Engineer </h3>
+                <h3> <span> language : </span> Hindi English Bengali </h3>
+                <h3> <span> Location : </span> Howrah, West Bengal </h3>
+                <h3> <span> Email : </span> <a class="inline-link" href="mailto:meghrajgupta58@gmail.com">meghrajgupta58@gmail.com</a> </h3>
+                <a href="images/CV.pdf"><button class="btn"> Download CV <i class="fa-solid fa-download"></i></button></a>
+            </div>
 
-    <div class="box">
-        <img src="images/KARATE camp 3.jpg" alt="">
-    </div>
-
-    <div class="box">
-        <img src="images/Orange Belt.jpg" alt="">
-    </div>
-
-    <div class="box">
-        <img src="images/College teacher.jpg" alt="">
-    </div>
-    
-    <div class="box">
-        <img src="images/E-commerce.jpg" alt="">
-    </div>
-    
-    <div class="box">
-        <img src="images/ROBOTICS.jpg" alt="">
-    </div>
-    
-    <div class="box">
-        <img src="images/DATA analytics.jpg" alt="">
-    </div>
-        
-</div>
-
-</section>
-
-<!-- portfolio section ends -->
-
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-<h1 class="heading"> <span>Get in Touch</span></h1>
-
-<div class="row">
-
-    <div class="content">
-
-        <h3 class="title"><span>Contact Info</span></h3>
-
-        <div class="info">
-            <h3> <i class="fas fa-envelope"></i> meghrajgupta58@gmail.com </h3>
-            <h3> <i class="fas fa-phone"></i> 91+ 7295001179 </h3>
-            <h3> <i class="fas fa-phone"></i> 91+ 9570829408 </h3>
-            <h3> <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/wizard-meghraj">Meghraj Gupta</a> </h3>
-            <h3> <i class="fas fa-map-marker-alt"></i> Howrah (West Bengal), india - 711109. </h3>
+            <div class="counter">
+                <div class="box reveal">
+                    <span id="exp-counter">3+</span>
+                    <h3 id="exp-counter-label">Years of experience</h3>
+                </div>
+                <div class="box reveal">
+                    <span data-count="12" data-suffix="+">12+</span>
+                    <h3>Project Completed</h3>
+                </div>
+                <div class="box reveal">
+                    <span data-count="40" data-suffix="+">40+</span>
+                    <h3>Happy clients</h3>
+                </div>
+                <div class="box reveal">
+                    <span data-count="7" data-suffix="+">7+</span>
+                    <h3>Awards won</h3>
+                </div>
+            </div>
         </div>
 
+        <div class="skills reveal">
+            <h2>Core skills</h2>
+            <div class="skill-grid">
+                <div class="skill"><span>HTML</span><b>95%</b><i style="--p:95%"></i></div>
+                <div class="skill"><span>CSS</span><b>85%</b><i style="--p:85%"></i></div>
+                <div class="skill"><span>JavaScript</span><b>75%</b><i style="--p:75%"></i></div>
+                <div class="skill"><span>Angular</span><b>80%</b><i style="--p:80%"></i></div>
+                <div class="skill"><span>Java</span><b>85%</b><i style="--p:85%"></i></div>
+                <div class="skill"><span>Full Stack</span><b>80%</b><i style="--p:80%"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h1 class="heading reveal"> My <span>Education</span> </h1>
+
+        <div class="box-container">
+            <div class="box reveal">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span class="timeline-date" data-start="2022-01-01" data-end="2024-12-31" data-format="range">2022-2024</span>
+                <em class="duration-text"></em>
+                <h3 data-status-end="2024-12-31" data-title-ongoing="M.Tech Pursuing" data-title-complete="M.Tech Completed">M.Tech Completed </h3>
+                <p>Budge Budge Institute of Technology kolkata (West Bengal) in Computer Science & Engineering </p>
+            </div>
+
+            <div class="box reveal">
+                <i class="fa-solid fa-code"></i>
+                <span class="timeline-date" data-start="2024-01-01" data-end="2024-12-31" data-format="year">2024</span>
+                <em class="duration-text"></em>
+                <h3>Angular Developer</h3>
+                <p>Angular developer creating responsive web interfaces, proficient in HTML, CSS, and TypeScript, with a focus on clean coding and collaboration.</p>
+            </div>
+
+            <div class="box reveal">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span class="timeline-date" data-start="2022-01-01" data-end="2022-12-31" data-format="year">2022</span>
+                <em class="duration-text"></em>
+                <h3>B.Tech Completed </h3>
+                <p>Budge Budge Institute of Technology kolkata (West Bengal) in Computer Science & Engineering with Aggregate CGPA 8.39 </p>
+            </div>
+
+            <div class="box reveal">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span class="timeline-date" data-start="2021-01-01" data-end="2021-12-31" data-format="year">2021</span>
+                <em class="duration-text"></em>
+                <h3>front end Developer</h3>
+                <p>Good Knowladge of front end Developer(HTML-95%, CSS-85%, Java Script-75%) Also Known as pug. I have made many PROJECT(gym website,food website,personal portfolio,E-commerce website) </p>
+            </div>
+
+            <div class="box reveal">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span class="timeline-date" data-start="2021-01-01" data-end="2021-12-31" data-format="year">2021</span>
+                <em class="duration-text"></em>
+                <h3>Digital Marketing </h3>
+                <p>eMareting Institute in howrah Certificate No: CERT001387989-EMI</p>
+            </div>
+
+            <div class="box reveal">
+                <i class="fa-solid fa-chart-line"></i>
+                <span class="timeline-date" data-start="2020-01-01" data-end="2020-12-31" data-format="year">2020</span>
+                <em class="duration-text"></em>
+                <h3>Data Analytics </h3>
+                <p>Globe Net harnessing skills in kolkata (participate in webinar) & JP International School greater noida in UP Certificate ID: 75704-162-585-2578</p>
+            </div>
+
+            <div class="box reveal">
+                <i class="fa-solid fa-robot"></i>
+                <span class="timeline-date" data-start="2020-01-01" data-end="2020-12-31" data-format="year">2020</span>
+                <em class="duration-text"></em>
+                <h3>Robotics </h3>
+                <p>JP International School greater noida in UP Certificate ID: E8270-362-585-34</p>
+            </div>
+
+            <div class="box reveal">
+                <i class="fa-solid fa-school"></i>
+                <span class="timeline-date" data-start="2018-01-01" data-end="2018-12-31" data-format="year">2018</span>
+                <em class="duration-text"></em>
+                <h3>Higher Secondary</h3>
+                <p>V K SS HURRAHI Runipur Nawada Bihar 805112 in Science(BSEB) with Aggregate percentage 63.2%</p>
+            </div>
+
+            <div class="box reveal">
+                <i class="fa-solid fa-book-open"></i>
+                <span class="timeline-date" data-start="2015-01-01" data-end="2015-12-31" data-format="year">2015</span>
+                <em class="duration-text"></em>
+                <h3>Secondary</h3>
+                <p>V K SS HURRAHI Runipur Nawada Bihar 805112 in BSEB with Aggregate percentage 66.4%</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="education experience" id="experience">
+        <h1 class="heading reveal"> My <span>Experience</span></h1>
+        <div class="box-container">
+            <div class="box reveal experience-item" data-start="2023-01-01" data-end="present">
+                <i class="fa-solid fa-briefcase"></i>
+                <span class="timeline-date" data-start="2023-01-01" data-end="present" data-format="range">2023(Jan)-Present</span>
+                <em class="duration-text"></em>
+                <h3>Java Developer</h3>
+                <p>Conacent Consulting Pvt Ltd.</p>
+                <p>Head Office: CF-90, CF Block, Sector 1, Salt Lake City, Kolkata-700064, West Bengal, India.</p>
+                <ul class="role-points">
+                    <li>Building and maintaining Java-based applications for client delivery.</li>
+                    <li>Collaborating on full-stack features with clean, production-ready code.</li>
+                </ul>
+            </div>
+
+            <div class="box reveal experience-item" data-start="2022-08-01" data-end="2023-01-01">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span class="timeline-date" data-start="2022-08-01" data-end="2023-01-01" data-format="range">2022(Aug)-2023(Jan)</span>
+                <em class="duration-text"></em>
+                <h3>Full Stack Java</h3>
+                <p>Naresh I Technologies</p>
+                <p>Add: 2nd Floor, Durga Bhavani Plaza,Ameerpet, Hyderabad Call/Whatsapp: +91-8179191999 Email:-onlinetraining@nareshit.com</p>
+                <ul class="role-points">
+                    <li>Hands-on full stack Java training covering core Java and web development.</li>
+                    <li>Practiced building end-to-end application flows before joining industry.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading reveal"> My <span>Certificates</span> </h1>
+
+        <div class="project-row">
+            <article class="project-card reveal">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h3>Gym Website</h3>
+                <p>Responsive frontend project focused on fitness branding and conversion-ready layout.</p>
+            </article>
+            <article class="project-card reveal">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Food Website</h3>
+                <p>Menu-driven food site with clean UI, cards, and mobile-first browsing.</p>
+            </article>
+            <article class="project-card reveal">
+                <i class="fa-solid fa-id-card"></i>
+                <h3>Personal Portfolio</h3>
+                <p>This portfolio — animated, responsive, and built to showcase skills and certificates.</p>
+            </article>
+            <article class="project-card reveal">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>E-commerce Website</h3>
+                <p>Product-focused storefront UI with catalog, visual hierarchy, and shopping flow.</p>
+            </article>
+        </div>
+
+        <div class="box-container">
+            <div class="box reveal"><img src="images/Kshitij .jpg" alt="Kshitij certificate" loading="lazy" decoding="async"></div>
+            <div class="box reveal"><img src="images/KARATE camp .jpg" alt="Karate camp certificate" loading="lazy" decoding="async"></div>
+            <div class="box reveal"><img src="images/College teacher.jpg" alt="College teacher certificate" loading="lazy" decoding="async"></div>
+            <div class="box reveal"><img src="images/E-commerce.jpg" alt="E-commerce certificate" loading="lazy" decoding="async"></div>
+            <div class="box reveal"><img src="images/ROBOTICS.jpg" alt="Robotics certificate" loading="lazy" decoding="async"></div>
+            <div class="box reveal"><img src="images/DATA analytics.jpg" alt="Data analytics certificate" loading="lazy" decoding="async"></div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading reveal"> <span>Get in Touch</span></h1>
+
+        <div class="row">
+            <div class="content reveal">
+                <h3 class="title"><span>Contact Info</span></h3>
+                <p class="contact-note">Open to Java, Angular, and full-stack work. Drop a message and I’ll get back quickly.</p>
+                <div class="info">
+                    <h3> <i class="fa-solid fa-envelope"></i> meghrajgupta58@gmail.com </h3>
+                    <h3> <i class="fa-solid fa-phone"></i> 91+ 7295001179 </h3>
+                    <h3> <i class="fa-solid fa-phone"></i> 91+ 9570829408 </h3>
+                    <h3> <i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/wizard-meghraj" target="_blank" rel="noopener noreferrer">Meghraj Gupta</a> </h3>
+                    <h3> <i class="fa-solid fa-location-dot"></i> Howrah (West Bengal), india - 711109. </h3>
+                </div>
+            </div>
+
+            <form action="https://formsubmit.co/meghrajgupta58@gmail.com" method="POST" class="contact-form reveal" id="contact-form" novalidate>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="New portfolio message">
+                <input type="hidden" name="_next" id="form-next" value="">
+                <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+
+                <div class="form-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="name" placeholder=" " class="box" id="text" autocomplete="name">
+                    <label class="label" for="text">Name</label>
+                </div>
+
+                <div class="form-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" placeholder=" " class="box" id="email" autocomplete="email">
+                    <label class="label" for="email">Email</label>
+                </div>
+
+                <div class="form-field">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" name="phone" placeholder=" " class="box" id="phone" autocomplete="tel">
+                    <label class="label" for="phone">Phone No</label>
+                </div>
+
+                <div class="form-field">
+                    <i class="fa-solid fa-message"></i>
+                    <textarea name="message" id="message" cols="30" rows="10" class="box message" placeholder=" "></textarea>
+                    <label class="label" for="message">Message</label>
+                </div>
+
+                <button type="submit" class="btn btn-send" id="sbmt">
+                    <span class="btn-text">Send Message</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <div class="mail-dialog" id="mail-dialog" hidden>
+        <div class="mail-dialog-card" role="alertdialog" aria-modal="true" aria-labelledby="mail-dialog-title" aria-describedby="mail-dialog-text">
+            <span class="mail-dialog-icon" id="mail-dialog-icon"><i class="fa-solid fa-circle-check"></i></span>
+            <h3 id="mail-dialog-title">Message sent</h3>
+            <p id="mail-dialog-text">Thanks for your message. I will get back to you soon.</p>
+            <button type="button" class="btn" id="mail-dialog-close">OK</button>
+        </div>
     </div>
 
-    <form action="" >
+    <a href="#home" class="top" aria-label="Back to top">
+        <img src="images/scroll-top-img.png" alt="Back to top">
+    </a>
 
-        <h3 class="label">Name:</h3> <input type="text" placeholder="name" class="box" id="text">
-        <h3 class="label">Email:</h3> <input type="email" placeholder="email" class="box" id="email">
-        <h3 class="label">phoneNo:</h3> <input type="tel" placeholder="phoneNo" class="box" id="phone">
-        <h3 class="label">Message:</h3><textarea name="txtarea" id="message" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-<!--         <button type="submit" class="btn" id="sbmt" onclick="sendMail()"> send <i class="fas fa-paper-plane"></i> </button> -->
-        <input type="button" class="btn" id="sbmt" onclick="validateForm()" value="send Message">
-    </form>
-
-</div>
-
-</section>
-
-<!-- contact section ends -->
-
-
-<!-- scroll top button  -->
-
-<a href="#home" class="top">
-    <img src="images/scroll-top-img.png" alt="">
-</a>
-
-
-
-<!-- jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- cdn smtpjs link  -->  
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-    <!-- smtpjs sendmail code -->
-<script>
-    function validateForm() {
-      let name = document.getElementById("text").value;
-      let email = document.getElementById("email").value;
-      let phoneNo = document.getElementById("phone").value;
-      let message = document.getElementById("message").value;
-
-      // Simple validation
-      if (!name || !email || !phoneNo || !message) {
-        alert("Info: All fields must be filled in.");
-        return false;
-      }
-
-      // Email validation (you can use a more complex validation if needed)
-      const emailRegex = /^\S+@\S+\.\S+$/;
-      if (!emailRegex.test(email)) {
-        alert("Info: Enter a valid email address.");
-        return false;
-      }
-
-      // Phone number validation (you can use a more complex validation if needed)
-      const phoneRegex = /^\d{10}$/;
-      if (!phoneRegex.test(phoneNo)) {
-        alert("Info: Enter a valid 10-digit phone number.");
-        return false;
-      }
-
-      // If all validations pass, send the email
-      sendMail();
-      return false; // Prevent the form from actually submitting
-    }
-
-    function sendMail() {
-      let name = document.getElementById("text").value;
-      let email = document.getElementById("email").value;
-      let phoneNo = document.getElementById("phone").value;
-      let message = document.getElementById("message").value;
-      let emailBody = "Name: " + name + "<br/>Email: " + email + "<br/>Phone: " + phoneNo + "<br/>Message: " + message;
-
-      Email.send({
-        SecureToken: "45a50538-202f-47d7-9109-d7256a8f67d6",
-        To: 'meghrajgupta58@outlook.com',
-        From: "meghrajgupta58@outlook.com",
-        Subject: "Contact Message from " + name,
-        Body: emailBody
-      }).then(
-        message => {
-         alert("Thanks For Your Message");
-        }
-      );
-    }
-</script>
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-<script>
-    $(document).ready(function(){
-
-$('#menu').click(function(){
-  $(this).toggleClass('fa-times');
-  $('header').toggleClass('toggle');
-});
-
-$(window).on('scroll load',function(){
-
-  $('#menu').removeClass('fa-times');
-  $('header').removeClass('toggle');
-
-  if($(window).scrollTop() > 0){
-    $('.top').show();
-  }else{
-    $('.top').hide();
-  }
-
-});
-
-// smooth scrolling 
-
-$('a[href*="#"]').on('click',function(e){
-
-    e.preventDefault();
-
-    $('html, body').animate({
-
-      scrollTop : $($(this).attr('href')).offset().top,
-
-    },
-      500, 
-      'linear'
-    );
-
-  });
-
-});
-</script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
