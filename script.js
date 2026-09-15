@@ -262,7 +262,7 @@
 
     function initTyping() {
         const el = document.getElementById('typed-role');
-        const roles = ['Full Stack Java Developer', 'Angular Developer', 'Software Engineer', 'Java Developer'];
+        const roles = ['Full Stack Java Developer', 'Full Stack Developer', 'Java Developer', 'Angular Developer'];
         if (!el || prefersReducedMotion) return;
 
         let roleIndex = 0;
