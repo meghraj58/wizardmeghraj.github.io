@@ -80,6 +80,23 @@ body{
     min-height: 100vh;
 }
 
+.skip-link{
+    position: absolute;
+    left: 1.6rem;
+    top: -5rem;
+    z-index: 4000;
+    padding: 0.8rem 1.4rem;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.skip-link:focus{
+    top: 1.2rem;
+}
+
 .bg-effects{
     position: fixed;
     inset: 0;
